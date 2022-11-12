@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SheCodes Wk2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="src/style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form id="city-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                class="search form-control"
+                id="city-search"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                type="submit"
+                class="btn btn-primary form-control"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col">
+            <h1 id="city-label">City Name</h1>
+          </div>
+          <div class="col date">
+            <h2 id="current-date">Saturday, 3rd March 2022</h2>
+          </div>
+        </div>
+        <h2 id="display-description">Sunny</h2>
+        <h3>
+          <span id="display-temperature">20</span
+          ><span class="units">
+            <a
+              href="#"
+              id="celsius"
+              >°C</a
+            >
+          </span>
+        </h3>
+        <br />
+        <div class="row">
+          <div class="col forecast">
+            <h2>Sun</h2>
+            ☁
+            <br />
+            <h2>15°C</h2>
+          </div>
+          <div class="col forecast">
+            <h2>Mon</h2>
+            ☁
+            <br />
+            <h2>15°C</h2>
+          </div>
+          <div class="col forecast">
+            <h2>Tue</h2>
+            ☁
+            <br />
+            <h2>17°C</h2>
+          </div>
+          <div class="col forecast">
+            <h2>Wed</h2>
+            🌧
+            <br />
+            <h2>12°C</h2>
+          </div>
+          <div class="col forecast">
+            <h2>Thu</h2>
+            ☀
+            <br />
+            <h2>18°C</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
