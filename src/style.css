@@ -44,3 +44,6 @@ h2 {
 .units {
   font-size: 16px;
 }
+.weather-icon {
+  width: 60px;
+}
