@@ -70,6 +70,6 @@ function showTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   iconElement.setAttribute(
     "src",
-    "https://openweathermap.org/img/wn/04d@2x.png"
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
