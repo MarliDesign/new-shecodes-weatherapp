@@ -65,6 +65,11 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#display-temperature");
   let descriptionElement = document.querySelector("#display-description");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = temperature;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    "https://openweathermap.org/img/wn/04d@2x.png"
+  );
 }
