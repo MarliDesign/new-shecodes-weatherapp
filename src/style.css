@@ -12,7 +12,7 @@ h1 {
 
 h2 {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 25px;
   color: grey;
   padding-top: 0px;
 }
@@ -46,4 +46,8 @@ h2 {
 }
 .weather-icon {
   width: 60px;
+}
+.wind-element {
+  font-weight: lighter;
+  font-size: 16px;
 }
