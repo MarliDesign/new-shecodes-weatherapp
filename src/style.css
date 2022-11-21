@@ -27,9 +27,7 @@ h2 {
   padding-top: 20px;
   text-align: right;
 }
-.forecast {
-  text-align: center;
-}
+
 .search {
   width: 70%;
 }
@@ -50,4 +48,16 @@ h2 {
 .wind-element {
   font-weight: lighter;
   font-size: 16px;
+}
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-day {
+  font-size: 16px;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.temperature-forecast-min {
+  opacity: 0.7;
 }
