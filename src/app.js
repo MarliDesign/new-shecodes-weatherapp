@@ -61,6 +61,31 @@ function city(event) {
 let cityHeader = document.querySelector("#city-form");
 cityHeader.addEventListener("submit", city);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tues", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+    <div class="weather-forecast-day">${day}</div>
+    ☁
+    <br />
+    <div class="weather-forecast-temperatures">
+      <span class="temperature-forecast-max">15°C</span>
+      <span class="temperature-forecast-min">10°C</span>
+    </div>
+  </div>
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   celsiusTemp = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#display-temperature");
@@ -94,3 +119,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemp = null;
+displayForecast();
